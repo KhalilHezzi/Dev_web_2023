@@ -2,8 +2,6 @@ const asyncHandler = require('express-async-handler')
 
 const Goal = require('../models/goalModel')
 const User  = require('../models/userModel')
-
-
 // get all goals
 //route get /api/goals
 //access private 
@@ -15,7 +13,6 @@ const getGoals = asyncHandler(async (req, res) =>
         })
     res.status(200).json(goals)
 })
-
 
 // set goal 
 //route post  /api/goals
